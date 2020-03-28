@@ -366,6 +366,7 @@ section {
   font-weight: 700;
   color: #050d18;
   margin-left: 60px;
+  padding-top: 30px;
 }
 
 .facts .count-box p {
@@ -388,10 +389,6 @@ section {
 
 .facts .count-box a:hover {
   color: #1f5297;
-}
-
-.facts. .count-box ul li {
-  padding-bottom: 10px;
 }
 
 /*--------------------------------------------------------------
