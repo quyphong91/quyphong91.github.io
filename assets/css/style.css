@@ -583,6 +583,9 @@ section {
   height: 50px;
   display: block;
   background: none;
-  position: relative
+}
+
+.download .button{
+  background-color: lightcoral;
 }
 
