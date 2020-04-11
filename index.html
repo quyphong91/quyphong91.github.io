@@ -431,32 +431,34 @@
           <p>Please drop me an email should you need further information.</p>
         </div>
 
-        <div class="row" data-aos="fade-in">
+        <div class="container">
+          <div class="row" data-aos="fade-in">
+          
+            <form 
+              action="https://formspree.io/mjveakkk" 
+              method="POST"
+              >
+              
+              <div class="row">
+                <div class="col">
+                  <label for="exampleFormControlInput1">Your name</label>
+                  <input type="text" class="form-control" placeholder="ex: Donald Trump" name="name">
+                </div>
 
-          <form 
-            action="https://formspree.io/mjveakkk" 
-            method="POST"
-            >
-            
-            <div class="row">
-              <div class="col">
-                <label for="exampleFormControlInput1">Your name</label>
-                <input type="text" class="form-control" placeholder="ex: Donald Trump" name="name">
+                <div class="col">
+                  <label for="exampleFormControlInput1">Your email address</label>
+                  <input type="email" class="form-control" placeholder="name@example.com" name="_replyto">
+                </div>
               </div>
 
-              <div class="col">
-                <label for="exampleFormControlInput1">Your email address</label>
-                <input type="email" class="form-control" placeholder="name@example.com" name="_replyto">
+              <div class="row">
+                <label for="exampleFormControlTextarea1">Your message here</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message"></textarea>
               </div>
-            </div>
+              <button type="submit" class="btn btn-outline-danger">Send</button>
+            </form>
 
-            <div class="row">
-              <label for="exampleFormControlTextarea1">Your message here</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message"></textarea>
-            </div>
-            <button type="submit" class="btn btn-outline-danger">Send</button>
-          </form>
-
+          </div>
         </div>
 
       </div>
