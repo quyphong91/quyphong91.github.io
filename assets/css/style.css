@@ -192,7 +192,8 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav-active {
   overflow: hidden;
 }
-
+.mobile-nav-active #header {
+  left: 0;
 }
 /*--------------------------------------------------------------
 # Hero Section
