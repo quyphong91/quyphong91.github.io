@@ -31,29 +31,29 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 .back-to-top {
   position: fixed;
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #149ddd;
   width: 40px;
   height: 40px;
   border-radius: 50px;
-  right: 15px;
-  bottom: 15px;
-  background: #149ddd;
-  color: #fff;
-  transition: display 0.5s ease-in-out;
-  z-index: 99999;
+  transition: all 0.4s;
 }
-
 .back-to-top i {
-  font-size: 24px;
-  position: absolute;
-  top: 7px;
-  left: 8px;
-}
-
-.back-to-top:hover {
+  font-size: 28px;
   color: #fff;
+  line-height: 0;
+}
+.back-to-top:hover {
   background: #2eafec;
-  transition: background 0.2s ease-in-out;
+  color: #fff;
+}
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
 }
 
 /*--------------------------------------------------------------
@@ -134,21 +134,18 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 /* Desktop Navigation */
 .nav-menu {
-  padding-top: 30px;
+  padding: 30px 0 0 0;
 }
-
 .nav-menu * {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-
 .nav-menu > ul > li {
   position: relative;
   white-space: nowrap;
 }
-
-.nav-menu a {
+.nav-menu a, .nav-menu a:focus {
   display: flex;
   align-items: center;
   color: #a8a9b4;
@@ -157,19 +154,16 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
   font-size: 15px;
 }
-
-.nav-menu a i {
+.nav-menu a i, .nav-menu a:focus i {
   font-size: 24px;
   padding-right: 8px;
   color: #6f7180;
 }
-
-.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+.nav-menu a:hover, .nav-menu .active, .nav-menu .active:focus, .nav-menu li:hover > a {
   text-decoration: none;
   color: #fff;
 }
-
-.nav-menu a:hover i, .nav-menu .active > a i, .nav-menu li:hover > a i {
+.nav-menu a:hover i, .nav-menu .active i, .nav-menu .active:focus i, .nav-menu li:hover > a i {
   color: #149ddd;
 }
 
@@ -180,32 +174,27 @@ h1, h2, h3, h4, h5, h6 {
   top: 15px;
   z-index: 9998;
   border: 0;
-  background: #149ddd;
-  color: #fff;
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  line-height: 1;
+  background-color: #149ddd;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  border-radius: 50px;
   cursor: pointer;
-  text-align: right;
-}
-
-.mobile-nav-toggle i {
-  color: #149ddd;
 }
 
 .mobile-nav-active {
   overflow: hidden;
 }
-
 .mobile-nav-active #header {
   left: 0;
 }
-
-.mobile-nav-active .mobile-nav-toggle i {
-  color: #fff;
-}
-
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
